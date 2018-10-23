@@ -1,9 +1,18 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title>lista-professores</ion-title>
+    <ion-title>Professores</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content padding>
 
+  <ion-list *ngFor="let professor of data?.professores">
+    <ion-card-header>
+        <ion-card-title>{{professor.nome}}</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+        <p>{{professor.curriculo}}</p>
+    </ion-card-content>
+  </ion-list>
+  
 </ion-content>
