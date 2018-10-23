@@ -6,7 +6,7 @@
 
 <ion-content padding>
 
-  <ion-list *ngFor="let professor of data?.professores">
+  <ion-list *ngFor="let professor of data?.professores" (click)="detalhesProfessor(professor)">
     <ion-card-header>
         <ion-card-title>{{professor.nome}}</ion-card-title>
     </ion-card-header>

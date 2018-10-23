@@ -20,4 +20,9 @@ export class ListaProfessoresPage implements OnInit {
     });
   }
 
+  detalhesProfessor(professor){
+    this.listaProfessorService.currentProfessor = professor;
+    this.router.navigate(['/detalhes-professor'])
+  }
+
 }
